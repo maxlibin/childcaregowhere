@@ -1,3 +1,2 @@
 [@react.component]
-let make = (~message) =>
-  <div onClick=handleClick> {ReasonReact.string(message)} </div>;
+let make = (~message) => <div> {ReasonReact.string(message)} </div>;
