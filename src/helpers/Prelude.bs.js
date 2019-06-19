@@ -19,6 +19,12 @@ function s(prim) {
   return prim;
 }
 
+var Utils = /* module */[/* brand */"ChildCareGoWHere"];
+
+var Global_css = 0;
+
 exports.RR = RR;
 exports.s = s;
+exports.Utils = Utils;
+exports.Global_css = Global_css;
 /* ReasonReact Not a pure module */

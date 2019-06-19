@@ -25,7 +25,7 @@ var header = Emotion.css(undefined, /* :: */[
             /* :: */[
               Emotion.minHeight(/* `px */[
                     25096,
-                    60
+                    40
                   ]),
               /* :: */[
                 Emotion.borderBottom(/* `px */[
@@ -40,7 +40,16 @@ var header = Emotion.css(undefined, /* :: */[
                         0.1
                       ]
                     ]),
-                /* [] */0
+                /* :: */[
+                  Emotion.padding2(/* `px */[
+                        25096,
+                        10
+                      ], /* zero */-789508312),
+                  /* :: */[
+                    Emotion.alignItems(/* center */98248149),
+                    /* [] */0
+                  ]
+                ]
               ]
             ]
           ]
@@ -48,5 +57,23 @@ var header = Emotion.css(undefined, /* :: */[
       ]
     ]);
 
+var brand = Emotion.css(undefined, /* :: */[
+      Emotion.label("brand"),
+      /* :: */[
+        Emotion.fontSize(/* `px */[
+              25096,
+              18
+            ]),
+        /* :: */[
+          Emotion.fontWeight(700),
+          /* :: */[
+            Emotion.textDecoration(/* none */-922086728),
+            /* [] */0
+          ]
+        ]
+      ]
+    ]);
+
 exports.header = header;
+exports.brand = brand;
 /* header Not a pure module */

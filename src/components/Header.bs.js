@@ -4,11 +4,17 @@
 var React = require("react");
 var Prelude$ReactHooksTemplate = require("../helpers/Prelude.bs.js");
 var Header_Css$ReactHooksTemplate = require("./Header_Css.bs.js");
+var GlobalComponentStyle_Css$ReactHooksTemplate = require("../helpers/GlobalComponentStyle_Css.bs.js");
 
 function Header(Props) {
   return React.createElement("div", {
               className: Header_Css$ReactHooksTemplate.header
-            }, Prelude$ReactHooksTemplate.s(""));
+            }, React.createElement("div", {
+                  className: GlobalComponentStyle_Css$ReactHooksTemplate.container
+                }, React.createElement("a", {
+                      className: Header_Css$ReactHooksTemplate.brand,
+                      href: "/"
+                    }, Prelude$ReactHooksTemplate.s(Prelude$ReactHooksTemplate.Utils[/* brand */0]))));
 }
 
 var Css = 0;
