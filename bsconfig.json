@@ -12,9 +12,11 @@
     "module": "commonjs",
     "in-source": true
   }],
+  "ppx-flags": ["bs-emotion-ppx/ppx"],
   "suffix": ".bs.js",
   "namespace": true,
   "bs-dependencies": [
+    "bs-emotion",
     "reason-react"
   ],
   "refmt": 3
