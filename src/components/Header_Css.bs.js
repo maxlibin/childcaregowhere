@@ -13,40 +13,21 @@ var header = Emotion.css(undefined, /* :: */[
         /* :: */[
           Emotion.display(/* flex */-1010954439),
           /* :: */[
-            Emotion.backgroundColor(/* `rgba */[
-                  -878128972,
-                  /* tuple */[
-                    255,
-                    255,
-                    255,
-                    0.2
-                  ]
+            Emotion.minHeight(/* `px */[
+                  25096,
+                  40
                 ]),
             /* :: */[
-              Emotion.minHeight(/* `px */[
+              Emotion.padding2(/* `px */[
                     25096,
-                    40
-                  ]),
+                    10
+                  ], /* zero */-789508312),
               /* :: */[
-                Emotion.borderBottom(/* `px */[
-                      25096,
-                      1
-                    ], /* solid */12956715, /* `rgba */[
-                      -878128972,
-                      /* tuple */[
-                        0,
-                        0,
-                        0,
-                        0.1
-                      ]
-                    ]),
+                Emotion.alignItems(/* center */98248149),
                 /* :: */[
-                  Emotion.padding2(/* `px */[
-                        25096,
-                        10
-                      ], /* zero */-789508312),
+                  Emotion.position(/* fixed */10615156),
                   /* :: */[
-                    Emotion.alignItems(/* center */98248149),
+                    Emotion.zIndex(999),
                     /* [] */0
                   ]
                 ]
@@ -68,7 +49,13 @@ var brand = Emotion.css(undefined, /* :: */[
           Emotion.fontWeight(700),
           /* :: */[
             Emotion.textDecoration(/* none */-922086728),
-            /* [] */0
+            /* :: */[
+              Emotion.color(/* `hex */[
+                    5194459,
+                    "fff"
+                  ]),
+              /* [] */0
+            ]
           ]
         ]
       ]

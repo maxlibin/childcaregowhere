@@ -9,8 +9,34 @@ Emotion.$$global("html, body", /* :: */[
         Emotion.padding(/* zero */-789508312),
         /* :: */[
           Emotion.margin(/* zero */-789508312),
-          /* [] */0
+          /* :: */[
+            Emotion.minHeight(/* `pct */[
+                  5591841,
+                  100
+                ]),
+            /* :: */[
+              Emotion.height(/* `pct */[
+                    5591841,
+                    100
+                  ]),
+              /* [] */0
+            ]
+          ]
         ]
+      ]
+    ]);
+
+Emotion.$$global("#app", /* :: */[
+      Emotion.minHeight(/* `pct */[
+            5591841,
+            100
+          ]),
+      /* :: */[
+        Emotion.height(/* `pct */[
+              5591841,
+              100
+            ]),
+        /* [] */0
       ]
     ]);
 

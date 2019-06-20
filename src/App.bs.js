@@ -2,13 +2,43 @@
 'use strict';
 
 var React = require("react");
+var ReactLeaflet = require("react-leaflet");
 var Header$ReactHooksTemplate = require("./components/Header.bs.js");
+var App_Css$ReactHooksTemplate = require("./App_Css.bs.js");
+var Prelude$ReactHooksTemplate = require("./helpers/Prelude.bs.js");
 
 function App(Props) {
-  return React.createElement("div", undefined, React.createElement(Header$ReactHooksTemplate.make, { }));
+  return React.createElement("div", {
+              className: App_Css$ReactHooksTemplate.app
+            }, React.createElement(Header$ReactHooksTemplate.make, { }), React.createElement("div", {
+                  className: App_Css$ReactHooksTemplate.title
+                }, Prelude$ReactHooksTemplate.s(Prelude$ReactHooksTemplate.Utils[/* title */1])), React.createElement("div", {
+                  className: App_Css$ReactHooksTemplate.content
+                }, React.createElement(ReactLeaflet.Map, {
+                      center: /* tuple */[
+                        51.505,
+                        -0.09
+                      ],
+                      zoom: 13,
+                      children: null
+                    }, React.createElement(ReactLeaflet.TileLayer, {
+                          url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                          attribution: "&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
+                        }), React.createElement(ReactLeaflet.Marker, {
+                          position: /* tuple */[
+                            51.505,
+                            -0.09
+                          ],
+                          children: React.createElement(ReactLeaflet.Popup, {
+                                children: Prelude$ReactHooksTemplate.s("A pretty CSS3 popup.<br />Easily customizable.")
+                              })
+                        }))));
 }
+
+var Css = 0;
 
 var make = App;
 
+exports.Css = Css;
 exports.make = make;
 /* react Not a pure module */

@@ -19,7 +19,10 @@ function s(prim) {
   return prim;
 }
 
-var Utils = /* module */[/* brand */"ChildCareGoWHere"];
+var Utils = /* module */[
+  /* brand */"ChildCareGoWhere",
+  /* title */"Find the best child care centers that suits you in Singapore"
+];
 
 var Global_css = 0;
 
