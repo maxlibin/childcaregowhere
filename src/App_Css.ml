@@ -7,8 +7,6 @@ let app = [%css [
 ]]
 
 let title = [%css [
-  position `fixed;
-  zIndex 999;
   fontSize (`px 48);
   maxWidth (`px 700);
   fontWeight 700;
@@ -19,6 +17,19 @@ let title = [%css [
 ]]
 
 let content = [%css [
+  position `fixed;
+  zIndex 999;
+  fontSize (`px 48);
+  maxWidth (`px 700);
+  fontWeight 700;
+  top (`px 100);
+  left (`px 20);
+  color (`hex "fff");
+  textShadow ~y:(`px 1) ~blur:(`px 1) (`rgba (0,0,0, 0.4));
+  lineHeight (`px 48);
+]]
+
+let map = [%css [
   flex (`some (1., 1., (`pct 100.)));
   overflow `hidden;
 

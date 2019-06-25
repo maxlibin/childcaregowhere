@@ -23,6 +23,50 @@ var app = Emotion.css(undefined, /* :: */[
 var title = Emotion.css(undefined, /* :: */[
       Emotion.label("title"),
       /* :: */[
+        Emotion.fontSize(/* `px */[
+              25096,
+              48
+            ]),
+        /* :: */[
+          Emotion.maxWidth(/* `px */[
+                25096,
+                700
+              ]),
+          /* :: */[
+            Emotion.fontWeight(700),
+            /* :: */[
+              Emotion.top(/* `px */[
+                    25096,
+                    100
+                  ]),
+              /* :: */[
+                Emotion.left(/* `px */[
+                      25096,
+                      20
+                    ]),
+                /* :: */[
+                  Emotion.color(/* `hex */[
+                        5194459,
+                        "fff"
+                      ]),
+                  /* :: */[
+                    Emotion.lineHeight(/* `px */[
+                          25096,
+                          48
+                        ]),
+                    /* [] */0
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]);
+
+var content = Emotion.css(undefined, /* :: */[
+      Emotion.label("content"),
+      /* :: */[
         Emotion.position(/* fixed */10615156),
         /* :: */[
           Emotion.zIndex(999),
@@ -54,11 +98,28 @@ var title = Emotion.css(undefined, /* :: */[
                             "fff"
                           ]),
                       /* :: */[
-                        Emotion.lineHeight(/* `px */[
+                        Emotion.textShadow(undefined, /* `px */[
                               25096,
-                              48
+                              1
+                            ], /* `px */[
+                              25096,
+                              1
+                            ], /* `rgba */[
+                              -878128972,
+                              /* tuple */[
+                                0,
+                                0,
+                                0,
+                                0.4
+                              ]
                             ]),
-                        /* [] */0
+                        /* :: */[
+                          Emotion.lineHeight(/* `px */[
+                                25096,
+                                48
+                              ]),
+                          /* [] */0
+                        ]
                       ]
                     ]
                   ]
@@ -70,8 +131,8 @@ var title = Emotion.css(undefined, /* :: */[
       ]
     ]);
 
-var content = Emotion.css(undefined, /* :: */[
-      Emotion.label("content"),
+var map = Emotion.css(undefined, /* :: */[
+      Emotion.label("map"),
       /* :: */[
         Emotion.flex(/* `some */[
               -866639116,
@@ -133,4 +194,5 @@ var content = Emotion.css(undefined, /* :: */[
 exports.app = app;
 exports.title = title;
 exports.content = content;
+exports.map = map;
 /* app Not a pure module */

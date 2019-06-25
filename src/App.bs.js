@@ -5,6 +5,7 @@ var Curry = require("bs-platform/lib/js/curry.js");
 var React = require("react");
 var ReactLeaflet = require("react-leaflet");
 var Header$ChildCareCenter = require("./components/Header.bs.js");
+var Search$ChildCareCenter = require("./components/Search.bs.js");
 var App_Css$ChildCareCenter = require("./App_Css.bs.js");
 var Prelude$ChildCareCenter = require("./helpers/Prelude.bs.js");
 var ChildCareT$ChildCareCenter = require("./types/ChildCareT.bs.js");
@@ -25,13 +26,14 @@ function App(Props) {
                 }));
           return undefined;
         }), ([]));
-  console.log(match[0]);
   return React.createElement("div", {
               className: App_Css$ChildCareCenter.app
             }, React.createElement(Header$ChildCareCenter.make, { }), React.createElement("div", {
-                  className: App_Css$ChildCareCenter.title
-                }, Prelude$ChildCareCenter.s(Prelude$ChildCareCenter.Utils[/* title */1])), React.createElement("div", {
                   className: App_Css$ChildCareCenter.content
+                }, React.createElement("div", {
+                      className: App_Css$ChildCareCenter.title
+                    }, Prelude$ChildCareCenter.s(Prelude$ChildCareCenter.Utils[/* title */1])), React.createElement(Search$ChildCareCenter.make, { })), React.createElement("div", {
+                  className: App_Css$ChildCareCenter.map
                 }, React.createElement(ReactLeaflet.Map, {
                       center: /* tuple */[
                         1.385270,

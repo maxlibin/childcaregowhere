@@ -24,11 +24,13 @@ let make = () =>
     None;
   });
 
-  Js.log(childCareCenters);
   <div className=Css.app>
     <Header />
-    <div className=Css.title> Utils.title->s </div>
     <div className=Css.content>
+      <div className=Css.title> Utils.title->s </div>
+      <Search />
+    </div>
+    <div className=Css.map>
       <Map_Ll center=(1.385270, 103.851959) zoom=12>
         <TileLayer_Ll
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

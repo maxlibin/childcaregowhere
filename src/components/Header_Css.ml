@@ -14,5 +14,6 @@ let brand = [%css [
   fontSize (`px 18);
   fontWeight 700;
   textDecoration `none;
-  color (`hex "fff");
+  color (`hex "fffb00");
+  textShadow ~y:(`px 1) ~blur:(`px 1) (`rgba (0,0,0, 0.4));
 ]]

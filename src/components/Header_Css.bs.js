@@ -52,9 +52,26 @@ var brand = Emotion.css(undefined, /* :: */[
             /* :: */[
               Emotion.color(/* `hex */[
                     5194459,
-                    "fff"
+                    "fffb00"
                   ]),
-              /* [] */0
+              /* :: */[
+                Emotion.textShadow(undefined, /* `px */[
+                      25096,
+                      1
+                    ], /* `px */[
+                      25096,
+                      1
+                    ], /* `rgba */[
+                      -878128972,
+                      /* tuple */[
+                        0,
+                        0,
+                        0,
+                        0.4
+                      ]
+                    ]),
+                /* [] */0
+              ]
             ]
           ]
         ]
