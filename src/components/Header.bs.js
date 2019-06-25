@@ -2,19 +2,19 @@
 'use strict';
 
 var React = require("react");
-var Prelude$ReactHooksTemplate = require("../helpers/Prelude.bs.js");
-var Header_Css$ReactHooksTemplate = require("./Header_Css.bs.js");
-var GlobalComponentStyle_Css$ReactHooksTemplate = require("../helpers/GlobalComponentStyle_Css.bs.js");
+var Prelude$ChildCareCenter = require("../helpers/Prelude.bs.js");
+var Header_Css$ChildCareCenter = require("./Header_Css.bs.js");
+var GlobalComponentStyle_Css$ChildCareCenter = require("../helpers/GlobalComponentStyle_Css.bs.js");
 
 function Header(Props) {
   return React.createElement("div", {
-              className: Header_Css$ReactHooksTemplate.header
+              className: Header_Css$ChildCareCenter.header
             }, React.createElement("div", {
-                  className: GlobalComponentStyle_Css$ReactHooksTemplate.container
+                  className: GlobalComponentStyle_Css$ChildCareCenter.container
                 }, React.createElement("a", {
-                      className: Header_Css$ReactHooksTemplate.brand,
+                      className: Header_Css$ChildCareCenter.brand,
                       href: "/"
-                    }, Prelude$ReactHooksTemplate.s(Prelude$ReactHooksTemplate.Utils[/* brand */0]))));
+                    }, Prelude$ChildCareCenter.s(Prelude$ChildCareCenter.Utils[/* brand */0]))));
 }
 
 var Css = 0;

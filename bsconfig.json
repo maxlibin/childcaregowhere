@@ -1,9 +1,13 @@
 
 {
-  "name": "react-hooks-template",
+  "name": "ChildCareCenter",
   "reason": {
     "react-jsx": 3
   },
+  "bsc-flags": [
+    "-bs-super-errors",
+    "-open Belt"
+  ],
   "sources": {
     "dir" : "src",
     "subdirs" : true
@@ -17,7 +21,9 @@
   "namespace": true,
   "bs-dependencies": [
     "bs-emotion",
-    "reason-react"
+    "reason-react",
+    "bs-fetch",
+    "@glennsl/bs-json"
   ],
   "refmt": 3
 }

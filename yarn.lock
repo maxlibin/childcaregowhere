@@ -72,6 +72,11 @@
   resolved "https://registry.yarnpkg.com/@emotion/utils/-/utils-0.8.2.tgz#576ff7fb1230185b619a75d258cbc98f0867a8dc"
   integrity sha512-rLu3wcBWH4P5q1CGoSSH/i9hrXs7SlbRLkoq9IGuoPYNGQvDJ3pt/wmOM+XgYjIDRMVIdkUWt0RsfzF50JfnCw==
 
+"@glennsl/bs-json@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@glennsl/bs-json/-/bs-json-4.0.0.tgz#f057d0d1d84d614e27d8bbb67b64e6b6727f24b2"
+  integrity sha512-nunb6+cZcx7pyooh8i4froogXumOOiFb7rF3bz6E9X7b3Dc+3/HGwpnUjxciFN8eQL4QC+MskzG1tG+Ci1aJxA==
+
 "@minima.app/re-css@0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@minima.app/re-css/-/re-css-0.1.0.tgz#482295907f26ac8bfb0e2e71213407a53afdf423"
@@ -682,6 +687,16 @@ bs-emotion@^0.1.1:
   dependencies:
     "@minima.app/re-css" "0.1.0"
     emotion "9.2.12"
+
+bs-fetch@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/bs-fetch/-/bs-fetch-0.5.0.tgz#6913b1d1ddfa0b0a4b832357854e9763d61d4b28"
+  integrity sha512-cGjwRpyNcIaX+p2ssy/38zs7BM/miKNgmOR3NEhxKFete5mR05JcvjuV4raG89oGCG281SU1b56TTAKmf9VCug==
+
+bs-json@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/bs-json/-/bs-json-1.0.1.tgz#0e25ed5ba7164ab131e494669b755da9844cc37e"
+  integrity sha512-0KaYGnn3CJnXwVnEWyTv9yejF991I2O118olKA4APPW8lxVt737Wu4M+UWU+GK8jjEDVb768lM/CdplvBmyy8g==
 
 bs-platform@^5.0.4:
   version "5.0.4"
