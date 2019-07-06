@@ -27,8 +27,25 @@ let make = () =>
   <div className=Css.app>
     <Header />
     <div className=Css.content>
-      <div className=Css.title> Utils.title->s </div>
-      <Search />
+      <div className=Css.left>
+        <div className=Css.title> Utils.title->s </div>
+        <Search />
+      </div>
+      <div className=Css.right>
+        <div className=Css.centers>
+          {
+            switch childCareCenters {
+            | Loading => RR.null
+            | Loaded(centers) => centers->Array.map(center => {
+                <div key={center.centreCode ++ center.tpCode} className=Css.center>
+                  <h3>center.centreName->s</h3>
+                  <p>center.organisationDescription->s</p>
+                </div>
+              })->RR.array
+            };
+          }
+        </div>
+      </div>
     </div>
     <div className=Css.map>
       <Map_Ll center=(1.385270, 103.851959) zoom=12>
@@ -43,17 +60,4 @@ let make = () =>
         </Marker_Ll>
       </Map_Ll>
     </div>
-   <div className=Css.centers>
-    {
-      switch childCareCenters {
-      | Loading => RR.null
-      | Loaded(centers) => centers->Array.map(center => {
-          <div className=Css.center>
-            <h3>center.centreName->s</h3>
-            <p>center.organisationDescription->s</p>
-          </div>
-        })->RR.array
-      };
-    }
-   </div>
   </div>};

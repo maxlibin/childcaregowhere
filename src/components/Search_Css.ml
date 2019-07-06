@@ -4,7 +4,7 @@ let input = [%css [
   display `block;
   marginTop (`px 60);
   borderStyle `none;
-  width (`pct 100.);
+  width (`calc(`sub, (`pct 100.), (`px 40)));
   height (`px 60);
   borderRadius (`px 3);
   backgroundColor (`rgba (255, 255, 255, 0.8));

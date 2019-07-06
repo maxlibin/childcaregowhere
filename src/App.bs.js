@@ -33,8 +33,19 @@ function App(Props) {
             }, React.createElement(Header$ChildCareCenter.make, { }), React.createElement("div", {
                   className: App_Css$ChildCareCenter.content
                 }, React.createElement("div", {
-                      className: App_Css$ChildCareCenter.title
-                    }, Prelude$ChildCareCenter.s(Prelude$ChildCareCenter.Utils[/* title */1])), React.createElement(Search$ChildCareCenter.make, { })), React.createElement("div", {
+                      className: App_Css$ChildCareCenter.left
+                    }, React.createElement("div", {
+                          className: App_Css$ChildCareCenter.title
+                        }, Prelude$ChildCareCenter.s(Prelude$ChildCareCenter.Utils[/* title */1])), React.createElement(Search$ChildCareCenter.make, { })), React.createElement("div", {
+                      className: App_Css$ChildCareCenter.right
+                    }, React.createElement("div", {
+                          className: App_Css$ChildCareCenter.centers
+                        }, childCareCenters ? Belt_Array.map(childCareCenters[0], (function (center) {
+                                  return React.createElement("div", {
+                                              key: center[/* centreCode */1] + center[/* tpCode */0],
+                                              className: App_Css$ChildCareCenter.center
+                                            }, React.createElement("h3", undefined, Prelude$ChildCareCenter.s(center[/* centreName */2])), React.createElement("p", undefined, Prelude$ChildCareCenter.s(center[/* organisationDescription */4])));
+                                })) : null))), React.createElement("div", {
                   className: App_Css$ChildCareCenter.map
                 }, React.createElement(ReactLeaflet.Map, {
                       center: /* tuple */[
@@ -54,13 +65,7 @@ function App(Props) {
                           children: React.createElement(ReactLeaflet.Popup, {
                                 children: Prelude$ChildCareCenter.s("A pretty CSS3 popup.<br />Easily customizable.")
                               })
-                        }))), React.createElement("div", {
-                  className: App_Css$ChildCareCenter.centers
-                }, childCareCenters ? Belt_Array.map(childCareCenters[0], (function (center) {
-                          return React.createElement("div", {
-                                      className: App_Css$ChildCareCenter.center
-                                    }, React.createElement("h3", undefined, Prelude$ChildCareCenter.s(center[/* centreName */2])), React.createElement("p", undefined, Prelude$ChildCareCenter.s(center[/* organisationDescription */4])));
-                        })) : null));
+                        }))));
 }
 
 var Css = 0;

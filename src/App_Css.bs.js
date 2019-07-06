@@ -71,62 +71,119 @@ var content = Emotion.css(undefined, /* :: */[
         /* :: */[
           Emotion.zIndex(999),
           /* :: */[
-            Emotion.fontSize(/* `px */[
-                  25096,
-                  48
+            Emotion.width(/* `calc */[
+                  -1044768619,
+                  /* tuple */[
+                    /* sub */5745024,
+                    /* `pct */[
+                      5591841,
+                      100
+                    ],
+                    /* `px */[
+                      25096,
+                      40
+                    ]
+                  ]
                 ]),
             /* :: */[
-              Emotion.maxWidth(/* `px */[
+              Emotion.marginLeft(/* `px */[
                     25096,
-                    700
+                    20
                   ]),
               /* :: */[
-                Emotion.fontWeight(700),
+                Emotion.marginRight(/* `px */[
+                      25096,
+                      20
+                    ]),
                 /* :: */[
                   Emotion.top(/* `px */[
                         25096,
                         100
                       ]),
                   /* :: */[
-                    Emotion.left(/* `px */[
+                    Emotion.lineHeight(/* `px */[
                           25096,
-                          20
+                          48
                         ]),
                     /* :: */[
-                      Emotion.color(/* `hex */[
-                            5194459,
-                            "fff"
-                          ]),
-                      /* :: */[
-                        Emotion.textShadow(undefined, /* `px */[
-                              25096,
-                              1
-                            ], /* `px */[
-                              25096,
-                              1
-                            ], /* `rgba */[
-                              -878128972,
-                              /* tuple */[
-                                0,
-                                0,
-                                0,
-                                0.4
-                              ]
-                            ]),
-                        /* :: */[
-                          Emotion.lineHeight(/* `px */[
-                                25096,
-                                48
-                              ]),
-                          /* [] */0
-                        ]
-                      ]
+                      Emotion.display(/* flex */-1010954439),
+                      /* [] */0
                     ]
                   ]
                 ]
               ]
             ]
           ]
+        ]
+      ]
+    ]);
+
+var left = Emotion.css(undefined, /* :: */[
+      Emotion.label("left"),
+      /* :: */[
+        Emotion.color(/* `hex */[
+              5194459,
+              "fff"
+            ]),
+        /* :: */[
+          Emotion.maxWidth(/* `pct */[
+                5591841,
+                50
+              ]),
+          /* :: */[
+            Emotion.fontSize(/* `px */[
+                  25096,
+                  48
+                ]),
+            /* :: */[
+              Emotion.fontWeight(700),
+              /* :: */[
+                Emotion.textShadow(undefined, /* `px */[
+                      25096,
+                      1
+                    ], /* `px */[
+                      25096,
+                      1
+                    ], /* `rgba */[
+                      -878128972,
+                      /* tuple */[
+                        0,
+                        0,
+                        0,
+                        0.4
+                      ]
+                    ]),
+                /* :: */[
+                  Emotion.paddingRight(/* `px */[
+                        25096,
+                        20
+                      ]),
+                  /* [] */0
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]);
+
+var right = Emotion.css(undefined, /* :: */[
+      Emotion.label("right"),
+      /* :: */[
+        Emotion.paddingLeft(/* `px */[
+              25096,
+              20
+            ]),
+        /* :: */[
+          Emotion.flex(/* `some */[
+                -866639116,
+                /* tuple */[
+                  1,
+                  1,
+                  /* auto */-1065951377
+                ]
+              ]),
+          /* [] */0
         ]
       ]
     ]);
@@ -194,25 +251,25 @@ var map = Emotion.css(undefined, /* :: */[
 var centers = Emotion.css(undefined, /* :: */[
       Emotion.label("centers"),
       /* :: */[
-        Emotion.position(/* fixed */10615156),
+        Emotion.width(/* `pct */[
+              5591841,
+              100
+            ]),
         /* :: */[
-          Emotion.right(/* zero */-789508312),
+          Emotion.height(/* `pct */[
+                5591841,
+                100
+              ]),
           /* :: */[
-            Emotion.width(/* `pct */[
-                  5591841,
-                  50
-                ]),
+            Emotion.display(/* block */888960333),
             /* :: */[
-              Emotion.height(/* `pct */[
-                    5591841,
-                    100
-                  ]),
+              Emotion.zIndex(9),
               /* :: */[
-                Emotion.display(/* block */888960333),
-                /* :: */[
-                  Emotion.zIndex(9),
-                  /* [] */0
-                ]
+                Emotion.fontSize(/* `px */[
+                      25096,
+                      16
+                    ]),
+                /* [] */0
               ]
             ]
           ]
@@ -260,6 +317,8 @@ var center = Emotion.css(undefined, /* :: */[
 exports.app = app;
 exports.title = title;
 exports.content = content;
+exports.left = left;
+exports.right = right;
 exports.map = map;
 exports.centers = centers;
 exports.center = center;

@@ -15,9 +15,19 @@ var input = Emotion.css(undefined, /* :: */[
           /* :: */[
             Emotion.borderStyle(/* none */-922086728),
             /* :: */[
-              Emotion.width(/* `pct */[
-                    5591841,
-                    100
+              Emotion.width(/* `calc */[
+                    -1044768619,
+                    /* tuple */[
+                      /* sub */5745024,
+                      /* `pct */[
+                        5591841,
+                        100
+                      ],
+                      /* `px */[
+                        25096,
+                        40
+                      ]
+                    ]
                   ]),
               /* :: */[
                 Emotion.height(/* `px */[

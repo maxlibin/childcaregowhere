@@ -19,14 +19,26 @@ let title = [%css [
 let content = [%css [
   position `fixed;
   zIndex 999;
-  fontSize (`px 48);
-  maxWidth (`px 700);
-  fontWeight 700;
+  width (`calc(`sub, (`pct 100.), (`px 40)));
+  marginLeft (`px 20);
+  marginRight (`px 20);
   top (`px 100);
-  left (`px 20);
-  color (`hex "fff");
-  textShadow ~y:(`px 1) ~blur:(`px 1) (`rgba (0,0,0, 0.4));
   lineHeight (`px 48);
+  display `flex;
+]]
+
+let left = [%css [
+  color (`hex "fff");
+  maxWidth (`pct 50.);
+  fontSize (`px 48);
+  fontWeight 700;
+  textShadow ~y:(`px 1) ~blur:(`px 1) (`rgba (0,0,0, 0.4));
+  paddingRight (`px 20);
+]]
+
+let right = [%css [
+  paddingLeft (`px 20);
+  flex (`some(1., 1., `auto));
 ]]
 
 let map = [%css [
@@ -44,12 +56,11 @@ let map = [%css [
 ]]
 
 let centers = [%css [
-  position `fixed;
-  right `zero;
-  width (`pct 50.);
+  width (`pct 100.);
   height (`pct 100.);
   display `block;
   zIndex 9;
+  fontSize (`px 16);
 ]]
 
 let center = [%css [
