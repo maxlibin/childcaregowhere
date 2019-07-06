@@ -191,8 +191,76 @@ var map = Emotion.css(undefined, /* :: */[
       ]
     ]);
 
+var centers = Emotion.css(undefined, /* :: */[
+      Emotion.label("centers"),
+      /* :: */[
+        Emotion.position(/* fixed */10615156),
+        /* :: */[
+          Emotion.right(/* zero */-789508312),
+          /* :: */[
+            Emotion.width(/* `pct */[
+                  5591841,
+                  50
+                ]),
+            /* :: */[
+              Emotion.height(/* `pct */[
+                    5591841,
+                    100
+                  ]),
+              /* :: */[
+                Emotion.display(/* block */888960333),
+                /* :: */[
+                  Emotion.zIndex(9),
+                  /* [] */0
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]);
+
+var center = Emotion.css(undefined, /* :: */[
+      Emotion.label("center"),
+      /* :: */[
+        Emotion.backgroundColor(/* `rgba */[
+              -878128972,
+              /* tuple */[
+                255,
+                255,
+                255,
+                0.8
+              ]
+            ]),
+        /* :: */[
+          Emotion.padding2(/* `px */[
+                25096,
+                20
+              ], /* `px */[
+                25096,
+                20
+              ]),
+          /* :: */[
+            Emotion.borderRadius(/* `px */[
+                  25096,
+                  3
+                ]),
+            /* :: */[
+              Emotion.marginBottom(/* `px */[
+                    25096,
+                    10
+                  ]),
+              /* [] */0
+            ]
+          ]
+        ]
+      ]
+    ]);
+
 exports.app = app;
 exports.title = title;
 exports.content = content;
 exports.map = map;
+exports.centers = centers;
+exports.center = center;
 /* app Not a pure module */

@@ -43,4 +43,17 @@ let make = () =>
         </Marker_Ll>
       </Map_Ll>
     </div>
+   <div className=Css.centers>
+    {
+      switch childCareCenters {
+      | Loading => RR.null
+      | Loaded(centers) => centers->Array.map(center => {
+          <div className=Css.center>
+            <h3>center.centreName->s</h3>
+            <p>center.organisationDescription->s</p>
+          </div>
+        })->RR.array
+      };
+    }
+   </div>
   </div>};

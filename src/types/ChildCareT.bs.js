@@ -4,7 +4,13 @@
 var Json_decode = require("@glennsl/bs-json/src/Json_decode.bs.js");
 
 function item(json) {
-  return /* record */[/* tp_code */Json_decode.field("tp_code", Json_decode.string, json)];
+  return /* record */[
+          /* tpCode */Json_decode.field("tp_code", Json_decode.string, json),
+          /* centreCode */Json_decode.field("centre_code", Json_decode.string, json),
+          /* centreName */Json_decode.field("centre_name", Json_decode.string, json),
+          /* organisationCode */Json_decode.field("organisation_code", Json_decode.string, json),
+          /* organisationDescription */Json_decode.field("organisation_description", Json_decode.string, json)
+        ];
 }
 
 var Decode = /* module */[/* item */item];

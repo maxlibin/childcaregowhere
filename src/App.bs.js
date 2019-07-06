@@ -3,6 +3,7 @@
 
 var Curry = require("bs-platform/lib/js/curry.js");
 var React = require("react");
+var Belt_Array = require("bs-platform/lib/js/belt_Array.js");
 var ReactLeaflet = require("react-leaflet");
 var Header$ChildCareCenter = require("./components/Header.bs.js");
 var Search$ChildCareCenter = require("./components/Search.bs.js");
@@ -15,6 +16,7 @@ function App(Props) {
           return /* Loading */0;
         }));
   var setChildCareCenters = match[1];
+  var childCareCenters = match[0];
   React.useEffect((function () {
           fetch("/data/childcare.json").then((function (prim) {
                     return prim.json();
@@ -52,7 +54,13 @@ function App(Props) {
                           children: React.createElement(ReactLeaflet.Popup, {
                                 children: Prelude$ChildCareCenter.s("A pretty CSS3 popup.<br />Easily customizable.")
                               })
-                        }))));
+                        }))), React.createElement("div", {
+                  className: App_Css$ChildCareCenter.centers
+                }, childCareCenters ? Belt_Array.map(childCareCenters[0], (function (center) {
+                          return React.createElement("div", {
+                                      className: App_Css$ChildCareCenter.center
+                                    }, React.createElement("h3", undefined, Prelude$ChildCareCenter.s(center[/* centreName */2])), React.createElement("p", undefined, Prelude$ChildCareCenter.s(center[/* organisationDescription */4])));
+                        })) : null));
 }
 
 var Css = 0;

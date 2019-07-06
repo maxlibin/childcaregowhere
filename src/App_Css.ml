@@ -42,3 +42,19 @@ let map = [%css [
     top (`px 90);
   ]
 ]]
+
+let centers = [%css [
+  position `fixed;
+  right `zero;
+  width (`pct 50.);
+  height (`pct 100.);
+  display `block;
+  zIndex 9;
+]]
+
+let center = [%css [
+  backgroundColor (`rgba(255,255,255, 0.8));
+  padding2 (`px 20) (`px 20);
+  borderRadius (`px 3);
+  marginBottom (`px 10);
+]]
