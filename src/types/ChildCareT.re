@@ -4,6 +4,9 @@ type t = {
   centreName: string,
   organisationCode: string,
   organisationDescription: string,
+  centreOperatingModel: string,
+  centreContactNo: int,
+  centreEmailAddress: string,
 }
 
 module Decode = {
@@ -14,6 +17,9 @@ module Decode = {
       centreName: json |> field("centre_name", string),
       organisationCode: json |> field("organisation_code", string),
       organisationDescription: json |> field("organisation_description", string),
+      centreOperatingModel: json |> field("centre_operating_model", string),
+      centreContactNo: json |> field("centre_contact_no", int),
+      centreEmailAddress: json |> field("centre_email_address", string),
     };
 };
 

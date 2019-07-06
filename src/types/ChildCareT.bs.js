@@ -9,7 +9,10 @@ function item(json) {
           /* centreCode */Json_decode.field("centre_code", Json_decode.string, json),
           /* centreName */Json_decode.field("centre_name", Json_decode.string, json),
           /* organisationCode */Json_decode.field("organisation_code", Json_decode.string, json),
-          /* organisationDescription */Json_decode.field("organisation_description", Json_decode.string, json)
+          /* organisationDescription */Json_decode.field("organisation_description", Json_decode.string, json),
+          /* centreOperatingModel */Json_decode.field("centre_operating_model", Json_decode.string, json),
+          /* centreContactNo */Json_decode.field("centre_contact_no", Json_decode.$$int, json),
+          /* centreEmailAddress */Json_decode.field("centre_email_address", Json_decode.string, json)
         ];
 }
 
