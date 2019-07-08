@@ -12,6 +12,9 @@
     "dir" : "src",
     "subdirs" : true
   },
+  "warnings": {
+    "error": "a-z"
+  },
   "package-specs": [{
     "module": "commonjs",
     "in-source": true

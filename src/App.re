@@ -7,8 +7,7 @@ type state =
   | Loaded(array(ChildCareT.t));
 
 [@react.component]
-let make = () =>
-{
+let make = () => {
   let (childCareCenters, setChildCareCenters) = React.useState(_ => Loading);
 
   React.useEffect0(() => {
@@ -16,9 +15,10 @@ let make = () =>
       Fetch.fetch("/data/childcare.json")
       |> then_(Fetch.Response.json)
       |> then_(json => {
-        setChildCareCenters(_ => Loaded(json -> ChildCareT.result));
-        resolve();
-      })
+           setChildCareCenters(_ => Loaded(json->ChildCareT.result));
+           resolve();
+         })
+      |> ignore
     );
 
     None;
@@ -34,15 +34,20 @@ let make = () =>
       <div className=Css.right>
         <div className=Css.centers>
           {
-            switch childCareCenters {
+            switch (childCareCenters) {
             | Loading => RR.null
-            | Loaded(centers) => centers->Array.map(center => {
-                <div key={center.centreCode ++ center.tpCode} className=Css.center>
-                  <h3>center.centreName->s</h3>
-                  <p>center.organisationDescription->s</p>
-                </div>
-              })->RR.array
-            };
+            | Loaded(centers) =>
+              centers
+              ->Array.map(center =>
+                  <div
+                    key={center.centreCode ++ center.tpCode}
+                    className=Css.center>
+                    <h3> center.centreName->s </h3>
+                    <p> center.organisationDescription->s </p>
+                  </div>
+                )
+              ->RR.array
+            }
           }
         </div>
       </div>
@@ -60,4 +65,5 @@ let make = () =>
         </Marker_Ll>
       </Map_Ll>
     </div>
-  </div>};
+  </div>;
+};
