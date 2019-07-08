@@ -19,6 +19,18 @@ type t = {
   foodOffered: string,
   secondLanguagesOffered: string,
   sparkCertified: string,
+  weekdayFullDay: string,
+  weekdayHalfdayAm: string,
+  weekdayHalfdayPm: string,
+  saturday: string,
+  schemeType: string,
+  extendedOperatingHours: string,
+  provisionOfTransport: string,
+  iccp: string,
+  governmentSubsidy: string,
+  gstRegisration: string,
+  lastUpdated: string,
+  remarks: string,
 };
 
 module Decode = {
@@ -46,6 +58,19 @@ module Decode = {
       secondLanguagesOffered:
         json |> field("second_languages_offered", string),
       sparkCertified: json |> field("spark_certified", string),
+      weekdayFullDay: json |> field("weekday_fullDay", string),
+      weekdayHalfdayAm: json |> field("weekday_halfday_am", string),
+      weekdayHalfdayPm: json |> field("weekday_halfday_pm", string),
+      saturday: json |> field("saturday", string),
+      schemeType: json |> field("scheme_type", string),
+      extendedOperatingHours:
+        json |> field("extended_operating_hours", string),
+      provisionOfTransport: json |> field("provision_of_transport", string),
+      iccp: json |> field("iccp", string),
+      governmentSubsidy: json |> field("government_subsidy", string),
+      gstRegisration: json |> field("gst_regisration", string),
+      lastUpdated: json |> field("last_updated", string),
+      remarks: json |> field("remarks", string),
     };
 };
 
