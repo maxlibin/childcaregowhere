@@ -100,13 +100,29 @@ var content = Emotion.css(undefined, /* :: */[
                         100
                       ]),
                   /* :: */[
-                    Emotion.lineHeight(/* `px */[
-                          25096,
-                          48
+                    Emotion.height(/* `calc */[
+                          -1044768619,
+                          /* tuple */[
+                            /* sub */5745024,
+                            /* `vh */[
+                              26418,
+                              100
+                            ],
+                            /* `px */[
+                              25096,
+                              100
+                            ]
+                          ]
                         ]),
                     /* :: */[
-                      Emotion.display(/* flex */-1010954439),
-                      /* [] */0
+                      Emotion.lineHeight(/* `px */[
+                            25096,
+                            48
+                          ]),
+                      /* :: */[
+                        Emotion.display(/* flex */-1010954439),
+                        /* [] */0
+                      ]
                     ]
                   ]
                 ]
@@ -182,7 +198,10 @@ var right = Emotion.css(undefined, /* :: */[
                   /* auto */-1065951377
                 ]
               ]),
-          /* [] */0
+          /* :: */[
+            Emotion.overflow(/* auto */-1065951377),
+            /* [] */0
+          ]
         ]
       ]
     ]);
@@ -306,9 +325,67 @@ var center = Emotion.css(undefined, /* :: */[
                     25096,
                     10
                   ]),
-              /* [] */0
+              /* :: */[
+                Emotion.fontFamily("Helvetica, Arial, sans-serif"),
+                /* :: */[
+                  Emotion.color(/* `hex */[
+                        5194459,
+                        "#333"
+                      ]),
+                  /* [] */0
+                ]
+              ]
             ]
           ]
+        ]
+      ]
+    ]);
+
+var centerTitle = Emotion.css(undefined, /* :: */[
+      Emotion.label("centerTitle"),
+      /* :: */[
+        Emotion.fontSize(/* `px */[
+              25096,
+              18
+            ]),
+        /* :: */[
+          Emotion.marginBottom(/* `px */[
+                25096,
+                18
+              ]),
+          /* :: */[
+            Emotion.marginTop(/* zero */-789508312),
+            /* [] */0
+          ]
+        ]
+      ]
+    ]);
+
+var centerContent = Emotion.css(undefined, /* :: */[
+      Emotion.label("centerContent"),
+      /* :: */[
+        Emotion.fontSize(/* `px */[
+              25096,
+              16
+            ]),
+        /* :: */[
+          Emotion.select("p", /* :: */[
+                Emotion.marginTop(/* zero */-789508312),
+                /* :: */[
+                  Emotion.marginBottom(/* `px */[
+                        25096,
+                        16
+                      ]),
+                  /* :: */[
+                    Emotion.lineHeight(/* `px */[
+                          25096,
+                          18
+                        ]),
+                    /* [] */0
+                  ]
+                ]
+              ]),
+          /* [] */0
         ]
       ]
     ]);
@@ -322,6 +399,8 @@ export {
   map ,
   centers ,
   center ,
+  centerTitle ,
+  centerContent ,
   
 }
 /* app Not a pure module */

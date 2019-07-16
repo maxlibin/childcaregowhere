@@ -47,7 +47,11 @@ function App(Props) {
                                   return React.createElement("div", {
                                               key: center[/* centreCode */1] + center[/* tpCode */0],
                                               className: App_Css$ChildCareCenter.center
-                                            }, React.createElement("h3", undefined, Prelude$ChildCareCenter.s(center[/* centreName */2])), React.createElement("p", undefined, Prelude$ChildCareCenter.s(center[/* organisationDescription */4])), React.createElement("p", undefined, Prelude$ChildCareCenter.s(center[/* centreAddress */8])), React.createElement("p", undefined, Prelude$ChildCareCenter.s(center[/* centreWebsite */9])));
+                                            }, React.createElement("h3", {
+                                                  className: App_Css$ChildCareCenter.centerTitle
+                                                }, Prelude$ChildCareCenter.s(center[/* centreName */2])), React.createElement("div", {
+                                                  className: App_Css$ChildCareCenter.centerContent
+                                                }, React.createElement("p", undefined, Prelude$ChildCareCenter.s(center[/* organisationDescription */4])), React.createElement("p", undefined, Prelude$ChildCareCenter.s(center[/* centreAddress */8])), React.createElement("p", undefined, Prelude$ChildCareCenter.s(center[/* centreWebsite */9])), React.createElement("p", undefined, Prelude$ChildCareCenter.s(String(center[/* centreContactNo */6])))));
                                 })) : null))), React.createElement("div", {
                   className: App_Css$ChildCareCenter.map
                 }, React.createElement(ReactLeaflet.Map, {

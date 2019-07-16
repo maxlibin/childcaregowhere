@@ -42,13 +42,16 @@ let make = () => {
                  <div
                    key={center.centreCode ++ center.tpCode}
                    className=Css.center>
-                   <h3> center.centreName->s </h3>
-                   <p> center.organisationDescription->s </p>
-                   <p> center.centreAddress->s </p>
-                   <p> center.centreWebsite->s </p>
+                   <h3 className=Css.centerTitle> center.centreName->s </h3>
+                   <div className=Css.centerContent>
+                     <p> center.organisationDescription->s </p>
+                     <p> center.centreAddress->s </p>
+                     <p> center.centreWebsite->s </p>
+                     <p> {center.centreContactNo->string_of_int->s} </p>
+                   </div>
                  </div>
                )
-             ->RR.array;
+             ->RR.array
            }}
         </div>
       </div>

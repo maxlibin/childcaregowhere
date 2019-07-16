@@ -23,6 +23,7 @@ let content = [%css [
   marginLeft (`px 20);
   marginRight (`px 20);
   top (`px 100);
+  height (`calc(`sub, (`vh 100.), (`px 100)));
   lineHeight (`px 48);
   display `flex;
 ]]
@@ -39,6 +40,7 @@ let left = [%css [
 let right = [%css [
   paddingLeft (`px 20);
   flex (`some(1., 1., `auto));
+  overflow `auto;
 ]]
 
 let map = [%css [
@@ -68,4 +70,22 @@ let center = [%css [
   padding2 (`px 20) (`px 20);
   borderRadius (`px 3);
   marginBottom (`px 10);
+  fontFamily "Helvetica, Arial, sans-serif";
+  color (`hex "#333");
+]]
+
+let centerTitle = [%css [
+  fontSize (`px 18);
+  marginBottom (`px 18);
+  marginTop `zero;
+]]
+
+let centerContent = [%css [
+  fontSize (`px 16);
+
+  select "p" [
+    marginTop `zero;
+    marginBottom (`px 16);
+    lineHeight (`px 18);
+  ]
 ]]
