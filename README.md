@@ -1,5 +1,7 @@
 # childcaregowhere
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0f5d0431-8a4c-4f91-8e80-a724c4271b1d/deploy-status)](https://app.netlify.com/sites/amazing-fermi-decca3/deploys)
+
 ## Run Project
 
 ```sh
